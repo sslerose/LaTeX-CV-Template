@@ -1,0 +1,195 @@
+%-------------------------
+% STEM CV in LaTeX
+% Original Author: Jake Gutierrez (https://github.com/jakegut/resume)
+% Based off of: https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs
+% Modified by: Sam LeRose
+% Any informational changes are made on this page and in 'ref.bib', but other parts of the document can be changed for personalization
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\input{glyphtounicode}
+\input{packages}
+\input{commands}
+\input{font}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+% Modify the given false inputs to your information
+
+\begin{center}
+    \textbf{\Huge \scshape John Doe} \\ \vspace{2pt}
+    \small \formatPhoneNumber{2345678900} \hspace{2pt}$|$ \href{mailto:john.doe@gmail.com}{john.doe@gmail.com} $|$ 
+    \href{https://linkedin.com/in/...}{linkedin.com/in/jdoe} $|$
+    \href{https://github.com/...}{github.com/jdoe}
+\end{center}
+
+
+%-----------EDUCATION-----------
+% Add your education by changing the given inputs
+
+\section{Education}
+    \cvSubHeadingListStart
+        \cvSubheading
+        {University of Place}{Place, ST}
+        {B.S. in Physics}{Aug. 202X -- May 202X}
+    \cvSubHeadingListEnd
+
+
+%------RESEARCH EXPERIENCE------
+% General format:
+%\cvSubHeadingListStart
+%   \cvSubheading
+%       {Experience Title}{Dates Active}
+%       {Institution/Company}{City, State}
+%       \cvItemListStart
+%           \cvItem{Details of the work you contributed to.}
+%           \cvItem{Each new cvItem is a bullet point, add as many as you wish.}
+%       \cvItemListEnd
+%   \cvSubheading .....
+%   ...................
+%\cvSubHeadingListEnd
+
+\section{Research Experience}
+    \cvSubHeadingListStart
+        \cvSubheading
+            {Undergraduate Research Assistant}{Aug. 2023 -- Present}
+            {University of Here}{Here, ST}
+            \cvItemListStart
+                \cvItem{Developed X, Y, and Z.}
+                \cvItem{Created A for B.}
+                \cvItem{Exploring C to improve X and Y.}
+            \cvItemListEnd
+
+        \cvSubheading
+            {Summer Research Experience}{May 2021 -- July 2021}
+            {University of There}{There, ST}
+            \cvItemListStart
+                \cvItem{Your text here.}
+                \cvItem{More text here.}
+        \cvItemListEnd
+
+    \cvSubHeadingListEnd
+
+
+%------OTHER EXPERIENCE-------
+% Same format as the "Research Experience" section
+
+\section{Other Experience}
+    \cvSubHeadingListStart
+        \cvSubheading
+            {Physics Tutor}{Start -- End}
+            {Independent}{Anywhere, ST}
+            \cvItemListStart
+                \cvItem{Your text here.}
+            \cvItemListEnd
+            
+    \cvSubHeadingListEnd
+
+
+%-----------SERVICE----------
+% Same format as the "Research Experience" section
+
+\section{University Service}
+    \cvSubHeadingListStart
+        \cvSubheading
+            {Student Body Officer}{Jan. 2022 -- Dec. 2022}
+            {University of Somewhere}{Somewhere, ST}
+            \cvItemListStart
+                \cvItem{Your text here.}
+            \cvItemListEnd
+
+    \cvSubHeadingListEnd
+
+
+%-----------AWARDS-----------
+% General format:
+%\cvSubHeadingListStart
+%   \cvAwardsItem
+%       {Year}{Award name and a short description/reason for the award.}
+%   \cvAwardsItem
+%       {Year}{...}
+%   .............
+%\cvSubHeadingListEnd
+
+\section{Awards \& Honors}
+    \cvSubHeadingListStart
+        \cvAwardsItem
+            {2024}{Physics Department award.}
+        \cvAwardsItem
+            {2023}{Research award.}
+        \cvAwardsItem
+            {2021}{Service award.}
+        \cvAwardsItem
+            {2021}{Scholarship.}
+        
+    \cvSubHeadingListEnd
+
+
+%--------PUBLICATIONs--------
+% Add your publications to ref.bib like any other reference, but write your name in bold (see example).
+
+\section{Publications}
+    \cvSubHeadingListStart
+        \item
+        \printbibliography[heading=none]
+    \cvSubHeadingListEnd
+
+
+%--------CONFERENCES---------
+% General format:
+%\cvSubHeadingListStart
+%   \cvPosterItem
+%       {Authors (your name in bold)}{Year}{Title}{Conference Name}{City, ST}
+%   \cvPosterItem
+%       {Authors (your name in bold)}{Year}{Title}{Conference Name}{City, ST}
+%   .............
+%\cvSubHeadingListEnd
+
+\section{Conference Presentations}
+    \cvSubHeadingListStart
+        \cvPosterItem
+            {\textbf{J. Doe} and J. B. Goode}{2022}{Understanding Sound Clarity Through an Analysis of Audio Codecs.}{20th Annual Posters}{Somewhere, ST}
+        \cvPosterItem
+            {\textbf{J. Doe} and J. H. Christ}{2021}{How Does the Universe Exist? A Look into Current Studies of Baryogenesis.}{15th Annual Conference}{Somewhere, ST}
+    \cvSubHeadingListEnd
+
+%---------REFERENCES--------
+% General format:
+%\cvSubHeadingListStart
+%   \cvReference
+%       {Reference Name}{Job title}{Dept., University, City, ST, Zip}{Phone Number}{Email}
+%   \cvReference
+%       ......
+%   .............
+%\cvSubHeadingListEnd
+
+\section{References}
+    \cvSubHeadingListStart
+        \cvReference{Dr. Johnny B. Goode}{Physics Professor, REU Director (Research Mentor)}{Dept. of Physics \& Astronomy, University of Here, Here, ST 12345}{8000001234}{j.goode@uky.edu}
+        
+        \cvReference{Dr. Kendrick Duckworth}{Physics Professor (Research Mentor}{Dept. of Physics \& Astronomy, University of There, There, ST 54321}{8000102345}{k.duckworth@uky.edu}
+
+    \cvSubHeadingListEnd
+
+%-----------TEHCNICAL SKILLS-----------
+% Add different skills by adding \textbf{Category}{: Skill 1, Skill 2} \\ to the list below
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Computer Languages}{: Python, C\Plus\Plus, LaTeX} \\
+     \textbf{Developer Tools}{: Spyder, GitHub} \\
+     \textbf{Languages}{: Intermediate Spanish}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
